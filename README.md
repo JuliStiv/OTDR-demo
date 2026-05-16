@@ -21,11 +21,12 @@ Para mantener el orden y evitar conflictos con los archivos de diseño, el repos
 Con el fin de garantizar la integridad del diseño de la PCB y del firmware, todos los integrantes del equipo deben adoptar de forma estricta el siguiente flujo de trabajo basado en ramas:
 
 1. **Sincronizar la rama principal:** Antes de iniciar cualquier modificación local, en la rama principal, descarga los cambios más recientes del servidor remoto para evitar desajustes:
-   ```bash
-   git checkout main
-   git pull origin main
+  ```bash
+  git checkout main
+  git pull origin main
+  ```
 
-2. **Crear una rama de trabajo independiente:** No realizar modificaciones de manera directa sobre la rama `main`. Habilitá siempre una rama específica que describa brevemente la tarea a resolver (por ejemplo, el desarrollo de un bloque del circuito o una función del firmware):
+3. **Crear una rama de trabajo independiente:** No realizar modificaciones de manera directa sobre la rama `main`. Habilitá siempre una rama específica que describa brevemente la tarea a resolver (por ejemplo, el desarrollo de un bloque del circuito o una función del firmware):
   ```bash
   git checkout -b rama-mi-tarea
   ```
