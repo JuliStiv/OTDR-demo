@@ -2,12 +2,18 @@
 
 Repositorio de pruebas para el desarrollo del proyecto de Reflectómetro Óptico en el Dominio del Tiempo (OTDR). Este espacio está destinado a la centralización de código para el ESP32, simulaciones, esquemáticos en KiCad y documentación.
 
+* [1. Estructura del Repositorio](#1-estructura-del-repositorio)
+* [2. Flujo de Trabajo con Git](#2-flujo-de-trabajo-con-git)
+* [3. Conflictos con KiCad](#conflictos-con-kicad)
+
 ## 1. Estructura del Repositorio
 
 Para mantener el orden y evitar conflictos con los archivos de diseño, el repositorio se organiza bajo la siguiente estructura de directorios:
 
 * **docs/**: Contiene la documentación técnica del proyecto, notas de diseño, especificaciones del sistema y el marco teórico necesario para el desarrollo.
 * **pcb/**: Dedicado exclusivamente a los archivos de diseño electrónico. Dentro de esta carpeta, el subdirectorio `OTDR_test/` almacena los esquemáticos y placas de prueba preliminares desarrollados en KiCad.
+* **code/**: Contiene el firmware del ESP32.
+  * **Exclusión de compilados:** Está prohibido subir las carpetas de compilación local (`.pio/`, `build/`) o dependencias de librerías locales (`.vscode/`), esto con el fin de mantener el repositorio limpio y evitar conflictos de compilación. Todo esto debe estar excluido en el `.gitignore`.
 * **README.md**: Archivo principal de presentación e instrucciones básicas de operación para el equipo.
 
 ## 2. Flujo de Trabajo con Git
