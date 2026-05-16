@@ -1,0 +1,30 @@
+# --- PLATFORMIO & VS CODE ---
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+.gcc-flags.json
+.todo
+.vscode/
+# archivos de configuración de entorno locales
+.env
+
+# --- KICAD ---
+# Archivos temporales de bloqueo y respaldos
+*.lck
+*-bak
+*-bak.sch
+*-bak.kicad_pcb
+*.bck
+*.kicad_prl
+
+# Archivos de fabricación
+*.gbr
+*.drl
+*.pdf
+*.pos
+*.d356
+
+# --- SISTEMA OPERATIVO ---
+.DS_Store
+Thumbs.db
