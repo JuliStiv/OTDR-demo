@@ -13,7 +13,7 @@ Para mantener el orden y evitar conflictos con los archivos de diseño, el repos
 * **docs/**: Contiene la documentación técnica del proyecto, notas de diseño, especificaciones del sistema y el marco teórico necesario para el desarrollo.
 * **pcb/**: Dedicado exclusivamente a los archivos de diseño electrónico. Dentro de esta carpeta, el subdirectorio `OTDR_test/` almacena los esquemáticos y placas de prueba preliminares desarrollados en KiCad.
 * **code/**: Contiene el firmware del ESP32.
-  * **Exclusión de compilados:** Está prohibido subir las carpetas de compilación local (`.pio/`, `build/`) o dependencias de librerías locales (`.vscode/`), esto con el fin de mantener el repositorio limpio y evitar conflictos de compilación. Todo esto debe estar excluido en el `.gitignore`.
+  * **Exclusión de compilados:** No subir las carpetas de compilación local (`.pio/`, `build/`) o dependencias de librerías locales (`.vscode/`), esto con el fin de mantener el repositorio limpio y evitar conflictos de compilación. Todo esto debe estar excluido en el `.gitignore`.
 * **README.md**: Archivo principal de presentación e instrucciones básicas de operación para el equipo.
 
 ## 2. Flujo de Trabajo con Git
