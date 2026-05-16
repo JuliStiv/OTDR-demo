@@ -45,9 +45,8 @@ Con el fin de garantizar la integridad del diseño de la PCB y del firmware, tod
 5. **Aperturea de pull request:** En la interfaz web del repositorio en GitHub y genera un Pull Request. Ningún cambio se incorporará de forma directa a la rama principal sin contar con la revisión previa y la aprobación de los demás miembros del equipo.
 
 # Conflictos con KiCad
-Debido a que las modificaciones sobre archivos de diseño electrónico de texto estructurado (`*.kicad_sch` y `*.kicad_pcb`) generan conflictos de fusión (merge conflicts) que resultan extremadamente difíciles de solucionar manualmente y que pueden corromper las placas, se establecen las siguientes reglas:
+Debido a que las modificaciones sobre archivos de diseño electrónico de texto estructurado (`*.kicad_sch` y `*.kicad_pcb`) generan conflictos de fusión (merge conflicts) que pueden corromper los diseños, tener en cuenta los siguientes puntos:
 
-| Regla de Control | Descripción Técnica Operativa |
-| :--- | :--- |
-| **Edición Exclusiva** | Prohibido modificar el mismo archivo de KiCad de forma simultánea por dos integrantes. Coordinar la asignación de bloques del circuito antes de iniciar la edición. |
-| **Aislamiento de Respaldos** | Los archivos temporales de bloqueo (`*.lck`) y las copias de seguridad (`*-bak`) autogeneradas por KiCad deben ser excluidas mediante el archivo de configuración `.gitignore`|
+* **Edición Exclusiva:** No modificar el mismo archivo de KiCad de forma simultánea por dos integrantes. Coordinar la asignación de bloques del circuito antes de iniciar la edición.
+  
+* **Aislamiento de Respaldos:** Los archivos temporales de bloqueo (`*.lck`) y las copias de seguridad (`*-bak`) autogeneradas por KiCad deben ser excluidas mediante el archivo de configuración `.gitignore`
